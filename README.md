@@ -16,7 +16,7 @@
 
 ### Backend
 
-- Node.js 20.22.0
+- Node.js 22.20.0
 - Express 5.1.0
 
 ### Database
