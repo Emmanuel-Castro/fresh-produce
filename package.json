@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Emmanuel-Castro/fresh-produce/issues"
   },
-  "homepage": "https://github.com/Emmanuel-Castro/fresh-produce#readme"
+  "homepage": "https://github.com/Emmanuel-Castro/fresh-produce#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
