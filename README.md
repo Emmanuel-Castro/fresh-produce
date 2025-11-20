@@ -21,7 +21,7 @@
 
 ### Database
 
-- PostgreSQL
+- PostgreSQL 16.10
 
 ### Documentation
 
@@ -30,7 +30,7 @@
 
 ### AI Tools
 
-- Microsoft Copilot 
+- Microsoft Copilot
 
 ### Others
 
