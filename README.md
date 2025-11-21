@@ -34,6 +34,7 @@
 
 ### Others
 
+- WSL 2
 - Git 2.43.0
 - GNU Bash 5.2.21
 - Chrome DevTools 142
