@@ -12,8 +12,10 @@ const PORT = process.env.PORT || 3000;
 const menu = require('./routes/menu');
 const products = require('./routes/products');
 
+
 // Static Files Middleware
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Endpoints
 app.use('/', menu);
