@@ -4,15 +4,24 @@ const router = express.Router();
 const pool = require('../database');
 
 
-// Get all products
-router.get('/', async (req, res) => {
+// Route #1: Display the renderized HTML Page
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'html', 'products.html'));
+});
+
+
+// Route #2: Provide the data from the database via backend
+router.get('/data', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM products');
+    const result = await pool.query('SELECT id, name, price, measure FROM products');
+    
     res.json(result.rows);
+
   } catch (err) {
-    console.error(err);
-    res.status(500).send('<h1>Query Error</h1>');
+    console.error('Database Error:', err);
+    res.status(500).json({ error: 'Server error loading products' });
   }
 });
+
 
 module.exports = router;
